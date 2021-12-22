@@ -33,7 +33,7 @@ header {
 }
 
 a:hover {
-  font-size: 102%;
+  font-size: 101.5%;
   text-shadow: 0 0 8px var(--chrome);
 }
 
