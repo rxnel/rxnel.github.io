@@ -32,6 +32,11 @@ header {
   min-height: 100vh;
 }
 
+a:hover {
+  font-size: 102%;
+  text-shadow: 0 0 8px var(--chrome);
+}
+
 header nav {
   z-index: 100;
   width: 100%;
