@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
 :root {
   --gray: rgb(170, 170, 170);
-  --dark-gray: #181a1b;
+  --dark-gray: #181b18;
   --text-color: #fff;
   --lighter-text: rgb(219, 219, 219);
   --card-background: #2e3031;
@@ -9,6 +12,7 @@
   --dark-green: #1f7b4c;
   --red: #e44e58;
   --blue: #0077b5;
+  --black: #010203;
 
   --chrome: #e4e4e4;
   --darkchrome: #9d9c9c;
