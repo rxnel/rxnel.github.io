@@ -8,6 +8,7 @@
   --green: #228054;
   --dark-green: #1f7b4c;
   --chrome: #e4e4e4;
+  --darkchrome: #9d9c9c;
 }
 
 html {
@@ -165,7 +166,7 @@ header .hero .hero-btns .about:hover {
 
 header .hero .hero-btns .projects-btn {
   color: var(--dark-gray);
-  border: 2px solid var(--chrome);
+  border: 2px solid var(--darkchrome);
   background: var(--chrome);
 }
 
