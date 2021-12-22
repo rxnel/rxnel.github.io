@@ -7,6 +7,9 @@
   --skills-span: rgb(200, 200, 200);
   --green: #228054;
   --dark-green: #1f7b4c;
+  --red: #e44e58;
+  --blue: #0077b5;
+
   --chrome: #e4e4e4;
   --darkchrome: #9d9c9c;
 }
@@ -173,4 +176,51 @@ header .hero .hero-btns .projects-btn {
 header .hero .hero-btns .projects-btn:hover {
   background: transparent;
   color: var(--text-color);
+}
+
+header .socials {
+  z-index: 100;
+  top: 70%;
+  position: absolute;
+  left: -7rem;
+  -webkit-animation: social-links 0.5s;
+  animation: social-links 0.5s;
+}
+
+header .socials ul {
+  list-style: none;
+}
+
+header .socials ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  display: block;
+  width: 200px;
+  text-align: right;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+header .socials ul li a i {
+  padding-left: 1.5rem;
+}
+
+header .socials ul li .linkedin {
+  background: var(--blue);
+}
+
+header .socials ul li .github {
+  background: #2e3031;
+}
+
+header .socials ul li .email {
+  background: var(--red);
+}
+
+header .socials ul li a:hover {
+  -webkit-transform: translate(120px, 0);
+  transform: translate(120px, 0);
 }
