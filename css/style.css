@@ -1,15 +1,13 @@
 :root {
-  --red: #e44e58;
-  --dark-red: #e43956c4;
-  --blue: #0077b5;
   --gray: rgb(170, 170, 170);
   --dark-gray: #181a1b;
-  --dark-blue: #002333;
   --text-color: #fff;
   --lighter-text: rgb(219, 219, 219);
   --card-background: #2e3031;
   --skills-span: rgb(200, 200, 200);
   --green: #228054;
+  --dark-green: #1f7b4c;
+  --chrome: #e4e4e4;
 }
 
 html {
@@ -88,7 +86,7 @@ header nav .links .link::after {
   display: block;
   width: 0;
   height: 4px;
-  background: var(--dark-red);
+  background: var(--dark-green);
   -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
@@ -155,20 +153,20 @@ header .hero .hero-btns a {
 
 header .hero .hero-btns .about {
   color: var(--text-color);
-  border: 2px solid var(--red);
+  border: 2px solid var(--green);
 }
 
 header .hero .hero-btns .about:hover {
-  background: var(--red);
-  -webkit-box-shadow: 0 0 0 5px #e44e5867;
-  box-shadow: 0 0 0 5px #e44e5867;
+  background: var(--green);
+  -webkit-box-shadow: 0 0 0 2px #4ee47167;
+  box-shadow: 0 0 0 2px #4ee47167;
   color: #fff;
 }
 
 header .hero .hero-btns .projects-btn {
-  color: #fff;
-  border: 2px solid var(--blue);
-  background: var(--blue);
+  color: var(--dark-gray);
+  border: 2px solid var(--chrome);
+  background: var(--chrome);
 }
 
 header .hero .hero-btns .projects-btn:hover {
