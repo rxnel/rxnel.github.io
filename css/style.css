@@ -1,3 +1,17 @@
+:root {
+  --red: #e44e58;
+  --dark-red: #e43956c4;
+  --blue: #0077b5;
+  --gray: rgb(170, 170, 170);
+  --dark-gray: #181a1b;
+  --dark-blue: #002333;
+  --text-color: #fff;
+  --lighter-text: rgb(219, 219, 219);
+  --card-background: #2e3031;
+  --skills-span: rgb(200, 200, 200);
+  --green: #228054;
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -33,13 +47,17 @@ header nav {
   animation: nav-links 0.5s;
 }
 
-header nav .logo {
+header nav .nav-wrapper {
   color: var(--text-color);
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 5px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.nav-wrapper h3 span {
+  color: var(--green);
 }
 
 header nav .links {
@@ -77,4 +95,83 @@ header nav .links .link::after {
 
 header nav .links .link:hover::after {
   width: 100%;
+}
+
+header .hero {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+header .hero h1 {
+  width: 750px;
+}
+
+header .hero h1,
+header .hero p {
+  color: var(--text-color);
+}
+
+header .hero h1 {
+  white-space: nowrap;
+  text-align: center;
+  font-size: calc(1.2rem + 3.2vw);
+}
+
+header .hero h1 span {
+  color: var(--green);
+}
+
+header .hero p {
+  color: var(--lighter-text);
+  line-height: 1.6;
+  font-size: calc(14px + 0.5vw);
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+header .hero .hero-btns {
+  white-space: nowrap;
+  text-align: center;
+}
+
+header .hero .hero-btns a {
+  margin: 1rem 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 32px;
+  border-radius: 25px;
+  font-size: 1rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header .hero .hero-btns .about {
+  color: var(--text-color);
+  border: 2px solid var(--red);
+}
+
+header .hero .hero-btns .about:hover {
+  background: var(--red);
+  -webkit-box-shadow: 0 0 0 5px #e44e5867;
+  box-shadow: 0 0 0 5px #e44e5867;
+  color: #fff;
+}
+
+header .hero .hero-btns .projects-btn {
+  color: #fff;
+  border: 2px solid var(--blue);
+  background: var(--blue);
+}
+
+header .hero .hero-btns .projects-btn:hover {
+  background: transparent;
+  color: var(--text-color);
 }

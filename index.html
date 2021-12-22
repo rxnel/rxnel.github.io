@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronel Aguilar | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- BACK TO TOP BUTTON -->
@@ -33,7 +35,39 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <h1 class="h1">Hi, I'm a <span id="typed"></span></h1>
+            <p class="student" id="student">
+                Software Developer with a passion for learning.
+            </p>
+            <div class="hero-btns">
+                <a href="#about" class="about" id="about-btn">About me<a>
+                <a href="#projects" class="projects-btn" id="projects-btn">Projects</a>
+            </div>
+        </div>
+
+        <div id="i-am-strings">
+            <p> programmer </p> 
+            <p> problem solver </p>
+            <p> perfectionist </p>
+          </div>
+          <span id="typed"></span>
     </header>
+
+
+
+
+      <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#i-am-strings',
+          typeSpeed: 80,
+          backSpeed: 50,
+          loop: true
+        });
+      </script>
+
 </body>
 
 </html>
