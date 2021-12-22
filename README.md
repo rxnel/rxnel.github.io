@@ -1,3 +1,3 @@
-# rxnel.github.io1
+# rxnel.github.io
 
 my personal portfolio!
