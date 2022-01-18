@@ -310,3 +310,96 @@ header .socials ul li a:hover {
   border-width: 2px;
   border-style: solid;
 }
+
+#skills {
+  background: var(--dark-gray);
+  padding: 5rem 0;
+}
+
+#skills .header h2 {
+  font-size: 2.5rem;
+  position: relative;
+  color: var(--text-color);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
+#skills .header h2 span {
+  color: var(--green);
+}
+
+#skills .header h2::after {
+  content: "";
+  position: absolute;
+  margin-left: 1rem;
+  top: 50%;
+  width: 20%;
+  height: 3px;
+  background: var(--green);
+}
+
+#skills .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#skills .container .frameworks h3 {
+  font-size: 0.9rem;
+}
+
+#skills .container .frameworks span {
+  font-size: 0.9rem;
+}
+
+#skills .container div {
+  background: var(--card-background);
+  height: 30rem;
+  width: 18rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  text-align: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#skills .container div p {
+  font-size: 4rem;
+  padding: 0.25rem;
+  color: var(--green);
+}
+
+#skills .container div h2 {
+  color: var(--text-color);
+}
+#skills .container div h3 {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  padding-bottom: 1rem;
+}
+
+#skills .container div span {
+  font-size: 1rem;
+  color: var(--skills-span);
+  line-height: 2;
+}
+
+#skills .container div span .iconify {
+  font-size: 1.2rem;
+}
+
+#skills .container div:hover {
+  -webkit-transform: translateY(-3%);
+  transform: translateY(-3%);
+  -webkit-box-shadow: 0 5px var(--red);
+  box-shadow: 0 5px var(--green);
+}
